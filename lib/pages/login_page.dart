@@ -37,14 +37,33 @@ class _LoginPageState extends State<LoginPage> {
     int lengthEmail = email.length;
     int lengthPassword = password.length;
 
-    if (lengthEmail != 0 && lengthPassword != 0) {
-      // if (email && password != null) {
+    // if (lengthEmail != 0 && lengthPassword != 0) {
+    //   // if (email && password != null) {
+    //   Navigator.push(
+    //     context,
+    //     MaterialPageRoute(builder: (context) => PageHome()),
+    //   );
+    // } else {
+    //   print('Sign In failed');
+    // }
+    if (lengthEmail == 0 && lengthPassword == 0) {
+      print('Sign In failed');
+      setState(() {
+        isloading = true;
+      });
+      return;
+    }
+
+    if (email == "admin@mail.com" && password == "12345") {
       Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => PageHome()),
       );
     } else {
-      print('Sign In failed');
+      print("Email atau Password salah !");
+      setState(() {
+        isloading = true;
+      });
     }
   }
 

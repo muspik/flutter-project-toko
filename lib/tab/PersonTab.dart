@@ -51,7 +51,7 @@ class _PersonTabState extends State<PersonTab> {
                   margin: EdgeInsets.only(top: 70.0)),
               SizedBox(height: 50),
               Text(
-                'Adelia saputri',
+                'Muspik',
                 style: TextStyle(
                   fontFamily: 'Poppins',
                   fontSize: 35,
@@ -59,7 +59,7 @@ class _PersonTabState extends State<PersonTab> {
               ),
               SizedBox(height: 5),
               Text(
-                '3337220009',
+                '19215179',
                 style: TextStyle(
                   fontFamily: 'Poppins',
                   fontSize: 25,

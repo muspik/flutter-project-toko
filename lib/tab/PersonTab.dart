@@ -10,7 +10,7 @@ class PersonTab extends StatefulWidget {
 }
 
 class _PersonTabState extends State<PersonTab> {
-  final ImagePerson = Image.asset('lib/images/woman.png');
+  final ImagePerson = Image.asset('lib/images/MAN.jpg');
 
   void BackTap(BuildContext context) {
     Navigator.push(
